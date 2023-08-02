@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        @import url(style.css);
+        #output{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+
+        <h1>Product Details</h1>
+            <input type="url" id="img" placeholder="Image Url">
+        <input type="text" id="title" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Product Price">
+        <input type="text" id="category" placeholder="Category">
+        <input type="submit" value="Add to Cart">
+        <input type="text" id="value" placeholder="search">
+    </form>
+    <div class="btns">
+        <button id="hightolow">Highest Price</button>
+        <button id="lowtohigh">Lowest Price</button>
+        <button id="men">Men</button>
+        <button id="women">Women</button>
+        <button id="kids">Kids</button>
+    </div>
+    <div id="output"></div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
